@@ -1,4 +1,5 @@
 * History of this document
+ - Jan Brezina 2013, compressed two page version as memory aid
  - Jonas Stein CC-BY-SA 2012-01-11
  - Tom Short granted to the public domain 2004-11-07 and got permission to include material from
  - Emmanuel Paradis (R for Beginners) 
