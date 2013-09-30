@@ -80,34 +80,33 @@
 \setlength{\multicolsep}{1pt}
 \setlength{\columnsep}{2pt}
 
-%\begin{center}
-%     {\textbf{\color{blue}R Basic Reference Card}} \\
-%\end{center}
-
+\begin{center}
+     {\Large\textbf{\color{blue}R Basic Reference Card}}
+\end{center}
+%
 %Examples in this document use the variables \code{df} = data frame object,
 %\code{v} = vector, \code{s} = string,  \code{f} = filename as string all others are not yet rewritten.
-
-\section{Getting help}
-\everypar={\hangindent=9mm}
-
+%
+%\section{Getting help}
+\vspace{-2ex}
 \bcode{?topic}  documentation on \code{topic} 
 
 \bcode{help.search("topic")} search the help system 
 
 \bcode{apropos("topic")} all objects matching the reg. exp. "topic"
 
-
-
 \bcode{ls()} list all objects; \code{pat="pat"} to search on a pattern
 
 
-
+\vspace{-7ex}
 \section{Input and output}
 \everypar={\hangindent=9mm}
 
 \bcode{source("my.R")} includes and executes my.R in this place
 
 \bcode{data(f)} loads specified data sets
+
+\bcode{install.package()}
 
 \bcode{library(s)} load add-on packages
 
