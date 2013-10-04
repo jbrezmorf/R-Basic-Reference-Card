@@ -31,7 +31,7 @@
 \setlength{\textwidth}{10.5in}
 
 
-\setlength{\topmargin}{-0.2in}
+\setlength{\topmargin}{-0.3in}
 \setlength{\textheight}{7.4in}
 \setlength{\headheight}{0in}
 \setlength{\headsep}{0in}
@@ -358,7 +358,7 @@ specify missing data (NA) removal.
 
 \bcode{solve(a)} matrix inverse of \code{a}
 
-\bcode{rowsum(x)}, \bcode{colsum(x)}, \bcode{rowmean}, \bcode{colmean} \\
+\bcode{rowSums(x)}, \bcode{colSums(x)}, \bcode{rowMeans}, \bcode{colMeans} \\
 sum/mean of rows/cols for a matrix-like object
 
 \section{Advanced data processing}
@@ -443,7 +443,7 @@ resulting data frames
 
 
 
-\section{Tests and confidence interavls}
+\section{Tests and confidence intervals}
 \everypar={\hangindent=9mm}
 \bcode{t.test()} Student's test
 
@@ -564,13 +564,11 @@ resulting data frames
 
 \bcode{persp(x, y, z)}  3D graph with perspective 
 
-
-
-\bcode{dotchart(x)}  Cleveland dot plot ...TODO
-
-\bcode{coplot(x\~{}y $\mid$ z)}  conditioning scatter plots for each value or interval of values of \code{z}
+\bcode{dotchart(x)}  Cleveland's plot, cf. dotchart2 from package Hmisc
 
 \bcode{stars(x)}  draw star for every row of df \code{x}; \code{draw.segments=}
+
+\bcode{coplot(x\~{}y $\mid$ z)}  conditioning scatter plots for each value or interval of values of \code{z}
 
 \bcode{symbols(x, y, ...)}  draw parametic symbols (termometer, circle, ...) at \code{x},\code{y} points
 
@@ -695,9 +693,10 @@ and 25, or any single character within \code{""}
 
 \bcode{pty}  plotting region type, \code{"s"}: square, \code{"m"}: maximal
 
-\bcode{tck}  tick's length as fraction of min of plot height and width
+\bcode{xpd}  if set to \code{TRUE}, do not clip objects poking out 
+%\bcode{tck}  tick's length as fraction of min of plot height and width
 
-\bcode{tcl}  tick's length as  fraction of text height (default \code{tcl=-0.5})
+%\bcode{tcl}  tick's length as  fraction of text height (default \code{tcl=-0.5})
 
 %\bcode{xaxt}  if \code{xaxt="n"} the $x$-axis is set but not drawn (useful in conjonction with \code{axis(side=1, ...)})
 
